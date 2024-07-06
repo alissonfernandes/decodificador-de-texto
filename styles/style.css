@@ -40,37 +40,33 @@ header h1 {
     padding-top: 32px;
 }
 
-.conteudos .conteudo_1 {
+.conteudos .conteudo_entrada {
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding-top: 128px;
 }
 
-
-.conteudoss .conteudo_1 textarea {
+.conteudos .conteudo_entrada #texto_entrada {
     width: 100%;
     height: 45px;
+    background-color: var(--cor-4);
 }
 
-#texto_entrada {
+.text_area {
     color: var(--cor-primaria);
     border: none;
-
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
-
-    background-color: var(--cor-4)
 }
 
-#text:focus {
+.text_area:focus {
     outline: none !important;
 }
 
-.conteudos .conteudo_1 .texto_informativo {
+.conteudos .conteudo_entrada .texto_informativo {
     width: 100%;
     height: 18px;
     display: flex;
@@ -84,12 +80,12 @@ header h1 {
     color: var(--cor-texto-2);
 }
 
-.conteudos .conteudo_1 .texto_informativo img {
+.conteudos .conteudo_entrada .texto_informativo img {
     width: 16px;
     height: 16px;
 }
 
-.conteudos .conteudo_1 .grupo_botoes {
+.conteudos .conteudo_entrada .grupo_botoes {
     width: 680px;
     height: 67px;
     display: flex;
@@ -120,7 +116,7 @@ header h1 {
     color: var(--cor-primaria);
 }
 
-.conteudos .conteudo_2 {
+.conteudos .conteudo_saida {
     width: 400px;
     height: 90vh;
     padding: 16px;
@@ -129,32 +125,44 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     background-color: var(--cor-secundaria);
     box-shadow: 5px 24px 32px 0px hsla(0, 0%, 0%, 0.082);
 }
 
-.conteudos .conteudo_2 img {
+.conteudos  #conteudo_1 {
+    justify-content: center;
+}
+
+.conteudos #conteudo_2 {
+    justify-content: space-between;
+    display: none;
+}
+
+.conteudos #conteudo_2 #texto_saida {
+    background-color: var(--cor-secundaria);
+}
+
+.conteudos .conteudo_saida img {
     width: 336px;
     height: 304px;
 }
 
-.conteudos .conteudo_2 div {
+.conteudos .conteudo_saida div {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 16px;
 }
 
-.conteudos .conteudo_2 h2 {
+.conteudos .conteudo_saida h2 {
     color: var(--cor-texto-1);
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
 
-.conteudos .conteudo_2 p {
+.conteudos .conteudo_saida p {
     color: var(--cor-texto-2);
     font-weight: 400;
     font-size: 16px;

@@ -9,8 +9,8 @@
 <body>
     <main class="conteudos">
         <header> <img src="assets/alura.svg" alt="Logo marca Alura"></header>
-       <section class="conteudo_1">
-            <textarea name="" id="texto_entrada" placeholder="Digite seu texto" rows=""></textarea>
+       <section class="conteudo_entrada">
+            <textarea name="" id="texto_entrada" class="text_area" placeholder="Digite seu texto" rows=""></textarea>
             <div>
                 <div class="texto_informativo">
                     <img src="assets/bi_exclamation-circle-fill.png" alt="Circulo com ponto de interrogação">
@@ -22,14 +22,16 @@
                 </div>
             </div>
        </section>
-       <section class="conteudo_2">
+       <section class="conteudo_saida" id="conteudo_1">
             <img src="assets/High-quality-products.svg" alt="Desenho de um boneco olhando para o diamante através de uma lupa">
             <div>
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
        </section>
-
+       <section class="conteudo_saida" id="conteudo_2">
+            <textarea name="" id="texto_saida" class="text_area justify_content_space_between" disabled></textarea>
+       </section>
     </main>
     <footer>
         <p>Desenvolvido por <a href="">Alisson Moreira</a></p>
