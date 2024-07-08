@@ -9,6 +9,17 @@ function criptografar() {
     mostrarTexto(textoCriptografado);
 }
 
+function descriptografar() {
+    let textoCriptografado = document.getElementById('texto_entrada').value.trim().toLowerCase();
+    let textoDescriptografado = textoCriptografado
+    .replaceAll('enter', 'e')
+    .replaceAll('imes', 'i')
+    .replaceAll('ai', 'a')
+    .replaceAll('ober', 'o')
+    .replaceAll('ufat', 'u');
+    mostrarTexto(textoDescriptografado);
+}
+
 function mostrarTexto(textoCriptografado) {
     let conteudo1 = document.getElementById('conteudo_1').style;
     let conteudo2 = document.getElementById('conteudo_2').style;
