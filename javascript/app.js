@@ -33,3 +33,9 @@ function mostrarTexto(textoCriptografado) {
         conteudo2.display= 'none';
     }
 }
+
+function copiarTexto() {
+    let texto = document.getElementById('texto_saida').value;
+    navigator.clipboard.writeText(texto);
+
+}
