@@ -39,3 +39,10 @@ function copiarTexto() {
     navigator.clipboard.writeText(texto);
 
 }
+
+const textoEntrada = document.getElementById('texto_entrada');
+textoEntrada.addEventListener('keyup', e => {
+    textoEntrada.style.height= '49px';
+    let scrollY = e.target.scrollHeight;
+    textoEntrada.style.height= `${scrollY}px`;
+});
