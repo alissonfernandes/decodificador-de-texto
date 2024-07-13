@@ -35,9 +35,9 @@ header h1 {
 .conteudos {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 5rem;
 
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .conteudos .conteudo_entrada {
@@ -45,7 +45,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 128px;
+    padding-top: 8rem;
 }
 
 .conteudos .conteudo_entrada #texto_entrada {
@@ -121,8 +121,8 @@ header h1 {
 .conteudos .conteudo_saida {
     width: 400px;
     height: 90vh;
-    padding: 16px;
-    border-radius: 32px;
+    padding: 1rem;
+    border-radius: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -183,4 +183,40 @@ footer {
 
 footer a {
     color: var(--cor-secundaria);
+}
+
+@media (max-width:768px) {
+
+    header {
+        width: 90%;
+    }
+
+    .conteudos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .conteudos .conteudo_entrada {
+        padding-top: 0;
+    }
+
+    .conteudos .conteudo_saida {
+        width: 90%;
+        justify-content: start;
+    }
+
+    .conteudos  #conteudo_1 {
+        justify-content: start;
+        padding-top: 5rem;
+    }
+
+    .conteudos #conteudo_2 button {
+        width: 90%;
+    }
+    
+    .conteudos .conteudo_saida img {
+        display: none;
+    }
+
 }
