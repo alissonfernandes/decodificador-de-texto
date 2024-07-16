@@ -91,7 +91,9 @@ header h1 {
     width: 680px;
     height: 67px;
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: start;
 }
 
 .botao {
@@ -145,6 +147,7 @@ header h1 {
     background-color: var(--cor-secundaria);
     height: 100%;
     margin-bottom: 16px;
+    color: var(--cor-texto-2);
 }
 
 .conteudos .conteudo_saida img {
@@ -219,4 +222,36 @@ footer a {
         display: none;
     }
 
+}
+
+@media(max-width: 500px) {
+
+    header {
+        height: 96px;
+    }
+
+    .conteudos .conteudo_entrada {
+        padding: 0 4%;
+    }
+
+    .conteudos .conteudo_entrada .grupo_botoes {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        align-items: center;
+    }
+
+    .conteudos .conteudo_entrada .grupo_botoes .botao {
+        width: 100%;
+    }
+
+    .conteudo_saida {
+        padding: 2rem;
+        gap: 2rem;
+        border-radius: 1px solid re;
+    } 
+
+    .conteudos .conteudo_saida .botao {
+        width: 100%;
+    }
 }
