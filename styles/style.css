@@ -188,7 +188,32 @@ footer a {
     color: var(--cor-secundaria);
 }
 
-@media (max-width:768px) {
+@media (max-width: 1350px) {
+
+    header {
+        padding: 0;
+    }
+
+    .conteudos {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 1249px) {
+
+    .conteudos {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1170px) {
+
+    .conteudos {
+        gap: .5rem;
+    }
+}
+
+@media (max-width: 1160px) {
 
     header {
         width: 90%;
@@ -224,7 +249,7 @@ footer a {
 
 }
 
-@media(max-width: 500px) {
+@media(max-width: 700px) {
 
     header {
         height: 96px;
